@@ -1,0 +1,167 @@
+html,body,.container,.swiper-container{ height: 100%; padding:0; }
+.mt45{	margin-top: 45px !important;}
+
+.swiper-slide{ position:relative; overflow: hidden;}
+.wrap{ width: 320px; margin: auto;}
+.bg1{ background: url('../img/bg1_01.jpg'); background-size:cover;}
+.bg2{ background: url('../img/bg2_01.jpg'); background-size:cover;}
+.bg3{ background: url('../img/bg3_01.jpg'); background-size:cover;}
+.bg4{ background: url('../img/bg4_01.jpg'); background-size:cover;}
+.bg5{ background: url('../img/bg5_01.jpg'); background-size:cover;}
+.bg6{ background: url('../img/bg6_01.jpg'); background-size:cover;}
+.bg7{ background: url('../img/bg7_01.jpg'); background-size:cover;}
+
+.music{ width: 29px; position: fixed; z-index: 999; top:5px; right:5px; display: block;}
+.arrow{z-index:100; position:absolute;  left:0; bottom: 0; width:22px; height:77px;  background:url(../img/arrow.png); background-size:100%; }
+.copy{ z-index:100; position:absolute;  right:5px; bottom: 5px; width:59px; height:29px;  background:url(../img/copy.png); background-size:100%; }
+.loading{
+    background: #0e0e0e; position: fixed;  z-index: 999; top: 0; height: 100%; width: 100%; color: #fff;
+}
+.loading img{ width: 315px;}
+.loading span{ width: 100%; text-align: center; position: absolute; z-index: 2; top: 190px;}
+
+
+img{position: absolute; display:none;}
+.swiper-slide-active img{ display: block;}
+
+.bg1-box1{ width: 311px; }
+.bg1-box2{ width: 320px; margin-top:30px; }
+.bg1-box3{ width: 185px; margin-top: 240px; margin-left: 70px; }
+.bg1-box4{ width: 269px; margin-top: 285px; margin-left: 30px;}
+.bg1-box5{ width: 148px; margin-top: 390px; margin-left: 85px; }
+
+.bg2-box1{ width: 257px; margin-top: 20px; margin-left: 32px; }
+.bg2-box2{ width: 284px; margin-top: 100px; margin-left: 20px; }
+.bg2-box3{ width: 267px; margin-top: 325px; margin-left: 32px; }
+
+.bg3-box1{ width: 173px; right: 0; top: 20px; }
+.bg3-box2{ width: 320px; margin-top: 0px; right: 0; }
+.bg3-box3{ width: 318px; margin-top: 285px; left: 0; }
+
+.bg4-box1{ width: 100%; right: 0; bottom: 0; }
+.bg4-box2{ width: 22px; top: -290px; right: 12px; }
+.bg4-box3{ width: 302px; margin-top: 135px; margin-left: 10px }
+.bg4-box4{ width: 185px; margin-top: 80px; margin-left: 70px; }
+
+.bg5-box1{ width: 267px; margin-top: 20px; margin-left: 25px;}
+.bg5-box2{ width: 289px; left: 0; }
+.bg5-box2 img{ width: 100%; }
+.bg5-box2-1,.bg5-box2-2,.bg5-box2-3{ margin-top: 196px;}
+.bg5-box2-5,.bg5-box2-6{ margin-top: 205px;}
+.bg5-box2-4,.bg5-box2-6{ margin-top: 290px;}
+
+.bg6-box1{ width: 36px; margin-top: 5px; margin-left: 5px; }
+.bg6-box2{ width: 74px; margin-left: 130px; }
+.bg6-box3{ width: 249px; margin-top: 135px; margin-left: 30px; }
+.bg6-box4{ width: 310px; margin-top: 110px; margin-left: 5px;}
+
+.bg7-box1{ width: 107px; margin-top: 270px; margin-left: -54px; left: 50%; }
+.bg7-box2{ width: 100%; }
+.bg7-box3{ width: 158px; margin-top: 390px; margin-left: -79px; left: 50%; }
+.bg7-box4{ width: 265px; margin-top: 187px; margin-left: 5px;}
+
+
+/*动画*/
+.swiper-slide-active .arrow{
+    -webkit-animation: bounce 5s infinite both;
+}
+
+.swiper-slide-active .bg1-box1{
+    -webkit-animation: bounceInRightTop 1s both;
+}
+.swiper-slide-active .bg1-box2{
+    -webkit-animation: fadeInDown 1s 0.8s both;
+}
+.swiper-slide-active .bg1-box3{
+    -webkit-animation: zoomInOut 1s 1.6s both;
+}
+.swiper-slide-active .bg1-box4, .swiper-slide-active .bg1-box5{
+    -webkit-animation: bounceIn 1s 2.4s both;
+}
+
+
+.swiper-slide-active .bg2-box1, .swiper-slide-active .bg2-box2{
+    -webkit-animation: zoomInOut 1s both;
+}
+.swiper-slide-active .bg2-box3{
+    -webkit-animation: fadeInUp 1s 1s both;
+}
+
+
+.swiper-slide-active .bg3-box1{
+    -webkit-animation: bounceInRightNoEase 1s 1s both;
+}
+.swiper-slide-active .bg3-box2{
+    -webkit-animation: zoomIn 1s  both;
+}
+.swiper-slide-active .bg3-box3{
+    -webkit-animation: bounceInLeftNoEase 1s 2s both;
+}
+
+.swiper-slide-active .bg4-box1{
+    -webkit-animation: fadeInUp 1s both;
+}
+.swiper-slide-active .bg4-box2{
+    -webkit-animation: bounce 5s infinite both;
+}
+.swiper-slide-active .bg4-box3{
+    -webkit-animation: zoomInOut 1s 2s both;
+}
+
+.swiper-slide-active .bg4-box4{
+    -webkit-animation: bounceInDown 1s 1s both;
+}
+
+.swiper-slide-active .bg5-box1{
+    -webkit-animation: bounceInDown 1s both;
+}
+
+.swiper-slide-active .bg5-box2-1{
+    -webkit-animation: fadeInAndout 3s both;
+}
+.swiper-slide-active .bg5-box2-2{
+    -webkit-animation: fadeInAndout 3s 3s both;
+}
+.swiper-slide-active .bg5-box2-3{
+    -webkit-animation: fadeInAndout 3s 6s both;
+}
+.swiper-slide-active .bg5-box2-4{
+    -webkit-animation: fadeInAndout 3s 9s both;
+}
+.swiper-slide-active .bg5-box2-5{
+    -webkit-animation: fadeInAndout 3s 12s both;
+}
+.swiper-slide-active .bg5-box2-6{
+    -webkit-animation: fadeIn 3s 15s both;
+}
+
+.swiper-slide-active .bg6-box1{
+    -webkit-animation: fadeIn 1s both;
+}
+.swiper-slide-active .bg6-box3{
+    -webkit-animation: bounceInRightTop 1s both;
+}
+.swiper-slide-active .bg6-box2, .swiper-slide-active .bg6-box4{
+    -webkit-animation: zoomInOut 1s 1s both;
+}
+
+.swiper-slide-active .bg7-box1{
+    -webkit-animation: bounceInRightDown 1s 1.6s both;
+}
+.swiper-slide-active .bg7-box3{
+    -webkit-animation: fadeInUp 1s 2.4s both;
+}
+
+.swiper-slide-active .bg7-box2{
+    -webkit-animation: bounceInDown 1s both;
+}
+.swiper-slide-active .bg7-box4{
+    -webkit-animation: bounceInLeft 1s 0.8s both;
+}
+
+
+@-webkit-keyframes fadeInAndout {
+  0% {opacity: 0;}
+  33%,66% {opacity: 1;}
+  100%{ opacity: 0; }
+}

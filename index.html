@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>
+<html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>黑桃互动EVA正版手游发行大事记</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/idangerous.swiper.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script> 
+</head>
+
+<body>
+<!-- container -->
+<div class="loading">
+    <img src="img/loading.jpg">
+    <span>正在加载  <i id="loadingtxt">0%</i></span>
+</div>
+<img src="img/music.png" class="music" id="music" >
+<div class="container">
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+	      <div class="swiper-slide bg1">
+	        <div class="wrap">
+    	        <img src="img/bg1-img1.png" class="bg1-box1">
+    	        <img src="img/bg1-img2.png" class="bg1-box2">
+    	        <img src="img/bg1-img3.png" class="bg1-box3">
+    	        <img  src="img/bg1-title.png" class="bg1-box4">
+    	        <img src="img/bg1-img4.png" class="bg1-box5">
+	        </div>
+	        <a href="#" class="arrow"></a>
+	        <a href="#" class="copy"></a>
+	      </div>
+	      
+          <div class="swiper-slide bg2">
+            <div class="wrap">
+            <img src="img/bg2-title.png" alt="" class="bg2-box1" />
+            <img src="img/bg2-img1.png" alt="" class="bg2-box2" />
+            <img src="img/bg2-title2.png" alt="" class="bg2-box3" />  
+            </div>
+            <a href="#" class="copy"></a>
+          </div>
+
+
+          <div class="swiper-slide bg3">
+            <img src="img/bg3-img2.png" alt="" class="bg3-box1" />
+            <img src="img/bg3-img3.png" alt="" class="bg3-box2" />
+            <img src="img/bg3-img1.png" alt="" class="bg3-box3" />
+            <a href="#" class="copy"></a>
+          </div>
+ 
+           <div class="swiper-slide bg4">
+            <div class="wrap">
+                <img src="img/bg1-img3.png" alt="" class="bg4-box4">
+                <img src="img/bg4-img2.png" alt="" class="bg4-box2" />
+                <img src="img/bg4-img1.png" alt="" class="bg4-box1" />
+                <img src="img/bg4-title2.png" alt="" class="bg4-box3" />
+            </div>
+            <a href="#" class="copy"></a>
+          </div>
+ 
+ 
+           <div class="swiper-slide bg5">
+            <div class="wrap">
+                <img src="img/bg5-title1.png" alt="" class="bg5-box1" />
+                <img src="img/bg5-s1.png" alt="" class="bg5-box2 bg5-box2-1" />
+                <img src="img/bg5-s2.png" alt="" class="bg5-box2 bg5-box2-2" />
+                <img src="img/bg5-s3.png" alt="" class="bg5-box2 bg5-box2-3" />
+                <img src="img/bg5-s4.png" alt="" class="bg5-box2 bg5-box2-4" />
+                <img src="img/bg5-s5.png" alt="" class="bg5-box2 bg5-box2-5" />
+                <img src="img/bg5-s6.png" alt="" class="bg5-box2 bg5-box2-6" />
+            </div>
+            <a href="#" class="copy"></a>
+          </div>
+          
+           <div class="swiper-slide bg6">
+            <div class="wrap">
+                <img src="img/bg6-img1.jpg" alt="" class="bg6-box1" />
+                <img src="img/bg6-img2.png" alt="" class="bg6-box2" />
+                <img src="img/bg6-img3.png" alt="" class="bg6-box3" />
+                <img src="img/bg6-title1.png" alt="" class="bg6-box4" />
+            </div>
+            <a href="#" class="copy"></a>
+          </div>
+
+           <div class="swiper-slide bg7">
+            <div class="wrap">
+                <img src="img/bg7-img1.jpg" alt="" class="bg7-box1" />
+                <img src="img/bg7-img1.png" alt="" class="bg7-box2" />
+                <img src="img/bg7-img2.jpg" alt="" class="bg7-box3" />
+                <img src="img/bg7-title1.png" alt="" class="bg7-box4" />
+            </div>
+            <a href="#" class="copy"></a>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- /container -->
+
+
+<script>
+    $(function(){
+        var swiper,swiper1;
+        swiper = $('.swiper-container').swiper({
+            mode: 'vertical',
+            speed:  600,
+        });
+
+    var music_key,once=0;
+    var audioElement2 = document.createElement('audio');
+    audioElement2.setAttribute('src', 'mp3/1.mp3');
+    audioElement2.controls = true;
+    audioElement2.loop = true;
+    audioElement2.load();
+    audioElement2.play();
+
+    var onTouchStart = function() {
+        if (once == 0) {
+            once = 1;
+            audioElement2.play();
+            music_key = 1;
+        }
+    }
+
+
+    $("#music").on('touchstart',function() {
+        if (music_key == 1) {
+            audioElement2.pause();
+            music_key = 0;
+        } else {
+            audioElement2.play();
+            music_key = 1;
+        }
+        return false;
+    });
+    
+    
+        var loaded = 0;
+                if ($('body img').length === 0 || navigator.userAgent.indexOf('MSIE 9') != -1) {
+                    show_page();
+                } else {
+                    $('body img').imagesLoaded().progress(function (instance, image) {
+                        loaded++;
+                        $('#loadingtxt').text( parseInt(loaded / instance.images.length * 100) + '%');
+                        if (loaded == instance.images.length) {
+                            show_page();
+                        }
+                    });
+                }
+                // work script
+                function show_page() {
+                    setTimeout(function () {
+                        $('.loading').fadeOut();                    
+                    }, 100);
+                }
+    });
+
+</script>
+
+<script>
+    //定义服务器图片目录路径
+    var imageUrl = '';   
+    //定义分享的缩略图的地址
+    var img_url = '';
+    //定义分享的链接
+    var lineLink = '';
+    //定义分享的内容
+    var descContent = '黑桃互动EVA正版手游发行大事记';
+    //定义分享的标题
+    var shareTitle = '黑桃互动EVA正版手游发行大事记';
+    //定义分享的app id (可选)
+    var appid = '';
+</script>
+</body>
+</html>
